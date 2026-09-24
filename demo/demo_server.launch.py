@@ -7,7 +7,7 @@ from launch.substitutions import LaunchConfiguration
 
 def generate_launch_description():
     config_dir = get_package_share_directory("network_bridge")
-    demo_server_config = config_dir + "/config/demo_server.yaml"
+    demo_server_config = config_dir + "/demo/demo_server.yaml"
 
     udp_receiver_host = LaunchConfiguration("udp_receiver_host", default="127.0.0.1")
     udp_receiver_port = LaunchConfiguration("udp_receiver_port", default="5001")
